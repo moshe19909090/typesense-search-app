@@ -6,13 +6,6 @@ yarn-error.log*
 dist/
 build/
 
-# React
-*.env
-.env.local
-.env.development
-.env.production
-.env.test
-
 # VSCode
 .vscode/
 
