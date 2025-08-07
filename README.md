@@ -29,6 +29,7 @@ Make sure you have the following installed:
 ├── backend/
 │   ├── src/
 │   │   ├── index.js           # Express server with /search endpoint
+│   │   ├── index-catalog.ts # Script for indexing
 │   │   ├── catalog.fixed.jsonl # Product data for indexing
 │   ├── package.json
 │   └── ...
