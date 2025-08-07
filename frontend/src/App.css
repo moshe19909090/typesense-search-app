@@ -1,0 +1,119 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.loading,
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .chip {
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .chip.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #333;
+  color: white;
+}
+
+.selected-summary {
+  margin: 10px 0 20px;
+}
+.selected-summary p {
+  margin: 4px 0;
+}
+
+/* App.css */
+.chip {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border: 1px solid #007bff;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: #f0f8ff;
+  font-size: 14px;
+  white-space: nowrap;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.chip:hover {
+  background-color: #e0f0ff;
+}
+
+.chip.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group h4 {
+  margin-bottom: 8px;
+}
